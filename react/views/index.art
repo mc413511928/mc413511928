@@ -8,8 +8,15 @@
 </head>
 
 <body>
-    <p>姓名：{{name}}</p>
-    <p>年龄：{{age}}</p>
+    <ul>
+        {{each user}}
+        <li>
+            {{$value.name}} {{$value.age}} {{$value.sex}}
+
+        </li>
+        {{/each}}
+
+    </ul>
 </body>
 
 </html>
